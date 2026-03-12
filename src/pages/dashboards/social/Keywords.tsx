@@ -1,12 +1,11 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import {
-  Search, Plus, Trash2, Edit, Bell, TrendingUp, TrendingDown, AlertTriangle,
-  Hash, Filter, Calendar, Download, Eye, Pause, Play, Target, Zap,
-  Globe, MessageSquare, BarChart3, Clock, CheckCircle, Settings
+  Search, Plus, Trash2, Bell, TrendingUp, TrendingDown, AlertTriangle,
+  Hash, Filter, Download, Eye, Pause, Play, Target, Zap, MessageSquare
 } from 'lucide-react';
 import {
-  LineChart, Line, AreaChart, Area, BarChart, Bar,
+  AreaChart, Area,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 
@@ -58,7 +57,6 @@ const topCooccurrences = [
 
 export function Keywords() {
   const [showAddModal, setShowAddModal] = useState(false);
-  const [selectedKeyword, setSelectedKeyword] = useState<Keyword | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
   return (

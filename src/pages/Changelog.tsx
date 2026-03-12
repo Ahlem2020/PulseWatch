@@ -298,7 +298,7 @@ export function Changelog() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="bg-gradient-to-r from-accent/10 to-accent-secondary/10 rounded-xl border border-accent/20 p-6"
+        className="bg-linear-to-r from-accent/10 to-accent-secondary/10 rounded-xl border border-accent/20 p-6"
       >
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>

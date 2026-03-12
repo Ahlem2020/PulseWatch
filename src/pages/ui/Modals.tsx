@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import { X, AlertTriangle, CheckCircle, Info, Trash2 } from 'lucide-react';
+import { X, AlertTriangle, CheckCircle, Trash2 } from 'lucide-react';
 
 interface ModalProps {
   isOpen: boolean;

@@ -390,7 +390,7 @@ export function Support() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-accent/10 to-accent-secondary/10 rounded-xl border border-accent/20 p-6">
+          <div className="bg-linear-to-br from-accent/10 to-accent-secondary/10 rounded-xl border border-accent/20 p-6">
             <h3 className="font-bold text-foreground mb-2">Enterprise Support</h3>
             <p className="text-sm text-muted-foreground mb-4">
               Need dedicated support? Upgrade to Enterprise for 24/7 priority support and a dedicated account manager.

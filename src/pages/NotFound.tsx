@@ -20,7 +20,7 @@ export function NotFound() {
             transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
             className="relative"
           >
-            <h1 className="text-[150px] font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-accent-secondary leading-none">
+            <h1 className="text-[150px] font-bold text-transparent bg-clip-text bg-linear-to-br from-accent to-accent-secondary leading-none">
               404
             </h1>
             <motion.div

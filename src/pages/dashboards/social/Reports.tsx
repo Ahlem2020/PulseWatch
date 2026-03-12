@@ -2,8 +2,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import {
   FileText, Plus, Download, Trash2, Edit, Calendar, Clock, CheckCircle,
-  Loader2, Eye, Copy, Share2, Filter, Search, BarChart3, PieChart,
-  TrendingUp, Users, Globe, Mail, Slack, Send, RefreshCw, Settings
+  Loader2, Eye, Share2, Filter, Search, BarChart3, PieChart,
+  TrendingUp, Users, Globe, Mail, Slack, Send, RefreshCw
 } from 'lucide-react';
 
 interface Report {
@@ -43,7 +43,6 @@ const recentExports = [
 
 export function Reports() {
   const [showCreateModal, setShowCreateModal] = useState(false);
-  const [selectedReport, setSelectedReport] = useState<Report | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
   const getStatusColor = (status: string) => {

@@ -121,7 +121,7 @@ const platforms = [
   { id: 'websites', name: 'Websites', icon: Globe, color: 'bg-emerald-500' },
   { id: 'x', name: 'X (Twitter)', icon: Twitter, color: 'bg-black' },
   { id: 'facebook', name: 'Facebook', icon: Facebook, color: 'bg-blue-600' },
-  { id: 'instagram', name: 'Instagram', icon: Instagram, color: 'bg-gradient-to-br from-purple-500 to-pink-500' },
+  { id: 'instagram', name: 'Instagram', icon: Instagram, color: 'bg-linear-to-br from-purple-500 to-pink-500' },
   { id: 'youtube', name: 'YouTube', icon: Youtube, color: 'bg-red-600' },
   { id: 'tiktok', name: 'TikTok', icon: Music2, color: 'bg-black' },
 ];
@@ -130,7 +130,7 @@ export function Feeds() {
   const [activePlatform, setActivePlatform] = useState<Platform>('all');
   const [viewMode, setViewMode] = useState<'feed' | 'grid' | 'columns'>('feed');
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortBy, setSortBy] = useState<'recent' | 'engagement' | 'sentiment'>('recent');
+  const [sortBy] = useState<'recent' | 'engagement' | 'sentiment'>('recent');
 
   const filteredItems = feedItems.filter(item => {
     if (activePlatform !== 'all' && item.platform !== activePlatform) return false;

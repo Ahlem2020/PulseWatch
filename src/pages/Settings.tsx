@@ -116,7 +116,7 @@ export function Settings() {
         className="bg-card border border-border rounded-xl p-6"
       >
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center text-white text-xl font-bold">
+          <div className="w-16 h-16 rounded-full bg-linear-to-br from-accent to-accent-secondary flex items-center justify-center text-white text-xl font-bold">
             JD
           </div>
           <div>
@@ -201,7 +201,7 @@ export function Settings() {
                 const country = countries.find(c => c.code === e.target.value);
                 if (country) setFocusedCountry(country);
               }}
-              className="px-3 py-2 bg-muted border border-border rounded-lg text-foreground min-w-[180px]"
+              className="px-3 py-2 bg-muted border border-border rounded-lg text-foreground min-w-45"
             >
               {countries.map((country) => (
                 <option key={country.code} value={country.code}>

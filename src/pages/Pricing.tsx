@@ -313,7 +313,7 @@ export function Pricing() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
-        className="text-center bg-gradient-to-r from-accent/10 to-accent-secondary/10 rounded-2xl p-8 border border-accent/20"
+        className="text-center bg-linear-to-r from-accent/10 to-accent-secondary/10 rounded-2xl p-8 border border-accent/20"
       >
         <h2 className="text-2xl font-bold text-foreground mb-2">Ready to get started?</h2>
         <p className="text-muted-foreground mb-6">

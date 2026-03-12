@@ -44,12 +44,12 @@ export const countries: CountryOption[] = [
 interface SettingsState {
   focusedCountry: CountryOption;
   apiToken: string;
-  mentionsSyncEnabled: boolean;
-  digitalFingerprintEmail: string;
+  mentionsSync: boolean;
+  digitalFingerprint: boolean;
   setFocusedCountry: (country: CountryOption) => void;
   setApiToken: (token: string) => void;
-  setMentionsSyncEnabled: (enabled: boolean) => void;
-  setDigitalFingerprintEmail: (email: string) => void;
+  setMentionsSync: (enabled: boolean) => void;
+  setDigitalFingerprint: (enabled: boolean) => void;
   regenerateApiToken: () => void;
 }
 
@@ -63,12 +63,12 @@ export const useSettingsStore = create<SettingsState>()(
     (set) => ({
       focusedCountry: countries[0], // Default to World
       apiToken: generateToken(),
-      mentionsSyncEnabled: true,
-      digitalFingerprintEmail: '',
+      mentionsSync: true,
+      digitalFingerprint: true,
       setFocusedCountry: (country) => set({ focusedCountry: country }),
       setApiToken: (token) => set({ apiToken: token }),
-      setMentionsSyncEnabled: (enabled) => set({ mentionsSyncEnabled: enabled }),
-      setDigitalFingerprintEmail: (email) => set({ digitalFingerprintEmail: email }),
+      setMentionsSync: (enabled) => set({ mentionsSync: enabled }),
+      setDigitalFingerprint: (enabled) => set({ digitalFingerprint: enabled }),
       regenerateApiToken: () => set({ apiToken: generateToken() }),
     }),
     {

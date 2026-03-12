@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MoreVertical, Heart, MessageCircle, Share2, Bookmark, ExternalLink, ArrowRight, User } from 'lucide-react';
+import { MoreVertical, Heart, MessageCircle, Share2, Bookmark, ArrowRight } from 'lucide-react';
 
 export function Cards() {
   return (
@@ -85,7 +85,7 @@ export function Cards() {
             alt="Team" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent flex items-end p-6">
             <div>
               <h3 className="text-lg font-semibold text-white">Overlay Card</h3>
               <p className="text-white/80 mt-1">Text overlay on image</p>

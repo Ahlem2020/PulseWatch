@@ -20,11 +20,6 @@ import {
   Layers,
   Activity,
   Shield,
-  Hash,
-  FileText,
-  Rss,
-  Globe,
-  Fingerprint,
 } from 'lucide-react';
 import { useState } from 'react';
 

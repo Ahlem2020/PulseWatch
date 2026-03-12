@@ -71,7 +71,7 @@ export function VerifyEmail() {
       >
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-linear-to-br from-accent to-accent-secondary flex items-center justify-center">
             <Radar className="w-6 h-6 text-white" />
           </div>
           <span className="font-bold text-xl text-foreground">PulseWatch</span>

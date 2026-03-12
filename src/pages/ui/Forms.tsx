@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Eye, EyeOff, Search, Mail, Lock, User, Calendar, Upload, X } from 'lucide-react';
+import { Eye, EyeOff, Search, Mail, Lock, User, Calendar, Upload } from 'lucide-react';
 
 export function Forms() {
   const [showPassword, setShowPassword] = useState(false);

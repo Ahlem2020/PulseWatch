@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Search, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, MoreHorizontal, Edit, Trash2, Eye, Download } from 'lucide-react';
+import { Search, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, Edit, Trash2, Eye } from 'lucide-react';
 
 const users = [
   { id: 1, name: 'John Doe', email: 'john@example.com', role: 'Admin', status: 'Active', date: '2024-01-15' },

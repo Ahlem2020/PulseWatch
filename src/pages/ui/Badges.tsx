@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Check, X, Clock, Star, Zap, Bell, User } from 'lucide-react';
+import { Check, X, Clock, Star, Zap, Bell } from 'lucide-react';
 
 export function Badges() {
   return (

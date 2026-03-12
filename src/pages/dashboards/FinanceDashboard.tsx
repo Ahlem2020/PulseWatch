@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { TrendingUp, TrendingDown, DollarSign, PieChart, Activity, BarChart3 } from 'lucide-react';
 import { 
-  LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart as RePieChart, Pie, Cell,
+  Line, Area, PieChart as RePieChart, Pie, Cell,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ComposedChart
 } from 'recharts';
 

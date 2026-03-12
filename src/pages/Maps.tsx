@@ -60,7 +60,7 @@ export function Maps() {
                   ))
                 }
               </Geographies>
-              {markers.map(({ name, coordinates, value }) => (
+              {markers.map(({ name, coordinates }) => (
                 <Marker key={name} coordinates={coordinates}>
                   <circle r={6} fill="#8b5cf6" stroke="#fff" strokeWidth={2} />
                   <text

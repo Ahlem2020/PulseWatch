@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import * as LucideIcons from 'lucide-react';
-import { Search, Copy, Check } from 'lucide-react';
+import { Search, Check } from 'lucide-react';
 
 // Get a subset of popular icons
 const popularIcons = [

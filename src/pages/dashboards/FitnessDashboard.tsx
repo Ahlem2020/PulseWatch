@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Activity, Heart, Moon, Footprints, Flame, Droplets, Target, Award } from 'lucide-react';
+import { Activity, Heart, Moon, Footprints, Flame, Droplets } from 'lucide-react';
 import { 
-  AreaChart, Area, BarChart, Bar, LineChart, Line, RadialBarChart, RadialBar,
+  AreaChart, Area, BarChart, Bar,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer 
 } from 'recharts';
 

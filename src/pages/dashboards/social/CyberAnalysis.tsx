@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
 import {
-  Shield, AlertTriangle, Eye, Globe, Server, Lock, Unlock, Bug, Activity,
-  TrendingUp, TrendingDown, Search, Filter, Download, RefreshCw, Clock,
-  CheckCircle, XCircle, AlertCircle, Wifi, Database, FileWarning, UserX
+  Shield, AlertTriangle, Eye, Server, Bug, Activity,
+  Search, RefreshCw, CheckCircle, AlertCircle, FileWarning
 } from 'lucide-react';
 import {
-  LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell,
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
+  AreaChart, Area, PieChart, Pie, Cell,
+  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 
 const threatData = [
@@ -329,7 +328,7 @@ export function CyberAnalysis() {
       </div>
 
       {/* Security Recommendations */}
-      <div className="p-6 rounded-xl bg-gradient-to-r from-accent/10 to-accent-secondary/10 border border-accent/20">
+      <div className="p-6 rounded-xl bg-linear-to-r from-accent/10 to-accent-secondary/10 border border-accent/20">
         <div className="flex items-start gap-4">
           <div className="p-3 rounded-lg bg-accent text-white">
             <Shield size={24} />

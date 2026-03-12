@@ -22,7 +22,7 @@ export function ServerError() {
             transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
             className="relative"
           >
-            <h1 className="text-[150px] font-bold text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-orange-500 leading-none">
+            <h1 className="text-[150px] font-bold text-transparent bg-clip-text bg-linear-to-br from-red-500 to-orange-500 leading-none">
               500
             </h1>
             <motion.div

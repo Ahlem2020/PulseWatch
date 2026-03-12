@@ -1,9 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import {
-  Globe, Monitor, Smartphone, Tablet, Plus, Play, Pause, Trash2, Edit, Copy,
+  Monitor, Plus, Play, Pause, Trash2, Edit, Copy,
   MoreVertical, Search, Filter, FolderOpen, Users, Shield, Fingerprint,
-  Chrome, RefreshCw, Settings, Download, Upload, Clock, CheckCircle, XCircle
+  Chrome, RefreshCw, Settings, Download, Upload, Clock, XCircle
 } from 'lucide-react';
 
 interface BrowserProfile {
@@ -109,7 +109,7 @@ const proxyList = [
 
 export function BrowserProfiles() {
   const [selectedProfile, setSelectedProfile] = useState<BrowserProfile | null>(null);
-  const [showNewProfile, setShowNewProfile] = useState(false);
+  const [, setShowNewProfile] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 

@@ -6,8 +6,6 @@ import {
   Bell,
   Sun,
   Moon,
-  Filter,
-  Calendar,
   ChevronDown,
   X,
   User,
@@ -19,20 +17,9 @@ import { useThemeStore } from '../../store/themeStore';
 import { useDashboardStore } from '../../store/dashboardStore';
 import { format } from 'date-fns';
 
-const platforms = [
-  { id: 'all', label: 'All Platforms' },
-  { id: 'twitter', label: 'Twitter/X' },
-  { id: 'reddit', label: 'Reddit' },
-  { id: 'news', label: 'News' },
-  { id: 'blog', label: 'Blogs' },
-  { id: 'youtube', label: 'YouTube' },
-  { id: 'instagram', label: 'Instagram' },
-];
-
 export function TopBar() {
   const { isDark, toggleTheme } = useThemeStore();
-  const { searchQuery, setSearchQuery, selectedPlatform, setSelectedPlatform, alerts } = useDashboardStore();
-  const [showFilters, setShowFilters] = useState(false);
+  const { searchQuery, setSearchQuery, alerts } = useDashboardStore();
   const [showNotifications, setShowNotifications] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
   const unreadAlerts = alerts.filter((a) => !a.read).length;
@@ -152,7 +139,7 @@ export function TopBar() {
             onClick={() => setShowUserMenu(!showUserMenu)}
             className="flex items-center gap-2 p-1 pr-2 rounded-lg hover:bg-muted transition-colors"
           >
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center text-white font-semibold text-sm">
+            <div className="w-8 h-8 rounded-full bg-linear-to-br from-accent to-accent-secondary flex items-center justify-center text-white font-semibold text-sm">
               JD
             </div>
             <ChevronDown size={14} className={`text-muted-foreground transition-transform ${showUserMenu ? 'rotate-180' : ''}`} />

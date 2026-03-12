@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Home, User, Settings, Bell, Mail, Calendar, FileText, Image, Music, Video } from 'lucide-react';
+import { Home, User, Settings, Mail, FileText, Image, Music, Video } from 'lucide-react';
 
 export function Tabs() {
   const [activeTab, setActiveTab] = useState(0);
@@ -62,7 +62,7 @@ export function Tabs() {
       <div className="bg-card rounded-xl border border-border p-6">
         <h2 className="text-lg font-semibold text-foreground mb-4">Pill Tabs</h2>
         <div>
-          <div className="flex gap-2 p-1 bg-muted rounded-lg inline-flex">
+          <div className="inline-flex gap-2 rounded-lg bg-muted p-1">
             {tabContent.map((tab, i) => (
               <button
                 key={tab.title}
@@ -119,7 +119,7 @@ export function Tabs() {
       <div className="bg-card rounded-xl border border-border p-6">
         <h2 className="text-lg font-semibold text-foreground mb-4">Vertical Tabs</h2>
         <div className="flex gap-6">
-          <div className="flex flex-col gap-1 min-w-[150px] border-r border-border pr-4">
+          <div className="flex min-w-37.5 flex-col gap-1 border-r border-border pr-4">
             {tabContent.map((tab, i) => {
               const Icon = tab.icon;
               return (

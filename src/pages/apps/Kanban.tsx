@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Plus, GripVertical, Check, Trash2, Edit, Calendar, Flag, MoreHorizontal } from 'lucide-react';
+import { Plus, Check, Trash2, Edit, Calendar, Flag } from 'lucide-react';
 
 interface Task {
   id: number;
@@ -133,7 +133,7 @@ export function Kanban() {
                 <div className="flex items-start gap-3">
                   <button 
                     onClick={() => toggleTask(task.id)}
-                    className="mt-0.5 w-5 h-5 rounded-full border-2 border-muted-foreground flex-shrink-0 hover:border-accent transition-colors"
+                    className="mt-0.5 h-5 w-5 shrink-0 rounded-full border-2 border-muted-foreground transition-colors hover:border-accent"
                   />
                   <div className="flex-1 min-w-0">
                     <p className="text-foreground font-medium">{task.title}</p>
@@ -194,7 +194,7 @@ export function Kanban() {
                 <div className="flex items-start gap-3">
                   <button 
                     onClick={() => toggleTask(task.id)}
-                    className="mt-0.5 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0"
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500"
                   >
                     <Check className="w-3 h-3 text-white" />
                   </button>

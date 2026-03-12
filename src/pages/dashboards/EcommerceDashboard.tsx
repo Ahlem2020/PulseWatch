@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Users, DollarSign, ShoppingCart, TrendingUp, ArrowUp, ArrowDown, MoreHorizontal } from 'lucide-react';
+import { Users, DollarSign, ShoppingCart, TrendingUp, ArrowUp, ArrowDown } from 'lucide-react';
 import { 
-  LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell,
+  BarChart, Bar, PieChart, Pie, Cell,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer 
 } from 'recharts';
 
